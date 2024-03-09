@@ -10,8 +10,10 @@
 }
 
 body {
-    font-family: "Lato", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
     background-color: var(--fcc-blue);
     color: var(--light-grey);
 }
