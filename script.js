@@ -26,6 +26,8 @@ function cleanInputString (str){
     //.replace takes two arguments. The first is the character sequence to replace – this can either be a string or a regex pattern. The second is the string to replace that sequence with. 
 }
 
+// In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
 function isInvalidInput(str){
+
     
 }
