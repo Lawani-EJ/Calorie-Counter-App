@@ -25,3 +25,7 @@ function cleanInputString (str){
     return str.replace (regex, ""); 
     //.replace takes two arguments. The first is the character sequence to replace – this can either be a string or a regex pattern. The second is the string to replace that sequence with. 
 }
+
+function isInvalidInput(str){
+    
+}
