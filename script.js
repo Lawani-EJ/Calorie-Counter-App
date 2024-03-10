@@ -22,5 +22,6 @@ function cleanInputString (str){
     //Regular Expressions (referred to as "regex") to match specific characters.
 
     const regex = /[+-\s]/g;  // The character class \s will match any whitespace character. //Turned my +-\s pattern into a character class.
-
+    return str.replace (regex, ""); 
+    //.replace takes two arguments. The first is the character sequence to replace – this can either be a string or a regex pattern. The second is the string to replace that sequence with. 
 }
