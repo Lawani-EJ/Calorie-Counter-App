@@ -21,6 +21,6 @@ function cleanInputString (str){
     // const regex = /hello/;  //While looping through the string works, creating a new array is inefficient for memory and runtime performance.
     //Regular Expressions (referred to as "regex") to match specific characters.
 
-    const regex = /\+-/; 
+    const regex = /\+-\s/;  // The character class \s will match any whitespace character.
 
 }
