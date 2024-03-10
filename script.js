@@ -28,6 +28,5 @@ function cleanInputString (str){
 
 // In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
 function isInvalidInput(str){
-
-    
+    const regex = /e/g; 
 }
