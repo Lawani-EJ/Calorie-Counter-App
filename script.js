@@ -31,5 +31,9 @@ function isInvalidInput(str){
     const regex = /\d+e\d+/i;  //This flag makes your pattern case-insensitive.
     // Added Character class from 0-9
     return regex = str.match(regex);  //.match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
-    
+
+}
+
+function addEntry(){
+    let targetId = "#" + entryDropdown.value;
 }
