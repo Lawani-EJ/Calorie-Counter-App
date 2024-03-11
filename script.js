@@ -28,6 +28,8 @@ function cleanInputString (str){
 
 // In HTML, number inputs allow for exponential notation (such as 1e10). You need to filter those out.
 function isInvalidInput(str){
-    const regex = /[0-9]+e[0-9]+/i;  //This flag makes your pattern case-insensitive.
+    const regex = /\d+e\d+/i;  //This flag makes your pattern case-insensitive.
     // Added Character class from 0-9
+    return regex = str.match(regex);  //.match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
+    
 }
