@@ -46,4 +46,8 @@ function addEntry(){
 
     //Each entry will have a text input for the entry's name, and a number input for the calories.
     // To get a count of the number of entries, query by text inputs.
+
+    const HTMLString = ``;
+    //Now i need to build the dynamic HTML string to add to the webpage. 
+    //Declare a new HTMLString variable, and assign it an empty template literal string.
 }
