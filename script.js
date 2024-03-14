@@ -53,4 +53,7 @@ function addEntry(){
     <input type="number" min = "0" placeholder = "Calories" id = "${entryDropdown.value}-${entryNumber}-calories"></input>`;
     //Now i need to build the dynamic HTML string to add to the webpage. 
     //Declare a new HTMLString variable, and assign it an empty template literal string.
+
+    //To see your new HTML content for the targetInputContainer, you will need to use the innerHTML property.
+    targetInputContainer.innerHTML += HTMLString;
 }
