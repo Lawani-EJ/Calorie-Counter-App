@@ -49,7 +49,8 @@ function addEntry(){
 
     const HTMLString = `<label for = "${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
     <input type = "text" placeholder = "Name" id = "${entryDropdown.value}-${entryNumber}-name"></input>
-    <label for = "${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>`;
+    <label for = "${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
+    <input type="number" min = "0" placeholder = "Calories" id = "${entryDropdown.value}-${entryNumber}-calories"></input>`;
     //Now i need to build the dynamic HTML string to add to the webpage. 
     //Declare a new HTMLString variable, and assign it an empty template literal string.
 }
