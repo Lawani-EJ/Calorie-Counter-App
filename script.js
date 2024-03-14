@@ -57,3 +57,7 @@ function addEntry(){
     //To see your new HTML content for the targetInputContainer, you will need to use the innerHTML property.
     targetInputContainer.innerHTML += HTMLString;
 }
+
+//The addEventListener method takes two arguments. The first is the event to listen to. 
+//(Ex. 'click') The second is the callback function, or the function that runs when the event is triggered.
+addEntryButton.addEventListener("click",addEntry);
