@@ -76,6 +76,6 @@ function getCaloriesFromInputs(list){
     for(const item of list){ //A for...of loop is used to iterate over elements in an iterable object like an array.
         //The NodeList values you will pass to list will consist of input elements.
         //So you will want to look at the value attribute of each element. 
-        const currVal = item.value;
+        const currVal = cleanInputString(item.value);
     }
 }
