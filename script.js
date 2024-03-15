@@ -74,6 +74,6 @@ function getCaloriesFromInputs(list){
     //It contains the elements that match the query selector.
     //You will need to loop through these elements in the list.
     for(const item of list){ //A for...of loop is used to iterate over elements in an iterable object like an array. 
-
+        const currVal = item.value;
     }
 }
