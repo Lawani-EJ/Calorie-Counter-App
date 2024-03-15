@@ -39,7 +39,7 @@ function addEntry(){
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`)
     // what happened here i dont know 
 
-    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length; //The querySelectorAll() method returns a NodeList of all the elements that match the selector.
+    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1; //The querySelectorAll() method returns a NodeList of all the elements that match the selector.
     // A NodeList is an array-like object, so you can access the elements using bracket notation.
     // want to number the entries a user adds. 
     //To get all of the number inputs, I used the querySelectorAll() method.
