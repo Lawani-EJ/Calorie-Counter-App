@@ -55,7 +55,9 @@ function addEntry(){
     //Declare a new HTMLString variable, and assign it an empty template literal string.
 
     //To see your new HTML content for the targetInputContainer, you will need to use the innerHTML property.
-    targetInputContainer.innerHTML += HTMLString;
+    targetInputContainer.insertAdjacentHTML();
+    //A bug occurs if you add a Breakfast entry, fill it in, then add a second Breakfast entry. 
+    //The values added are disappeared.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
