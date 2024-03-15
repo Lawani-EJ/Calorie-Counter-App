@@ -69,7 +69,11 @@ addEntryButton.addEventListener("click",addEntry);
 
 function getCaloriesFromInputs(list){
     let calories = 0;
-    for(const item of list){
+    //The list parameter is going to be the result of a query selector, which will return a NodeList.
+    //A NodeList is a list of elements like an array.
+    //It contains the elements that match the query selector.
+    //You will need to loop through these elements in the list.
+    for(const item of list){ //A for...of loop is used to iterate over elements in an iterable object like an array. 
 
     }
 }
