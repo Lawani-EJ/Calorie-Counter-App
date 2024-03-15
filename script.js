@@ -77,5 +77,6 @@ function getCaloriesFromInputs(list){
         //The NodeList values you will pass to list will consist of input elements.
         //So you will want to look at the value attribute of each element. 
         const currVal = cleanInputString(item.value);
+        //Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
     }
 }
