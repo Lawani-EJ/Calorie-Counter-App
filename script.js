@@ -79,5 +79,9 @@ function getCaloriesFromInputs(list){
         const currVal = cleanInputString(item.value);
         //Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
         const invalidInputMatch = isInvalidInput(currVal);
+
+        if(invalidInputMatch){
+
+        }
     }
 }
