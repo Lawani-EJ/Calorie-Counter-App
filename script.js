@@ -64,7 +64,9 @@ function addEntry(){
 }
 
 function calculateCalories(e) {
-
+// This function will be another event listener
+//so the first argument passed will be the browser event – e,
+//is a common name for this parameter.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
