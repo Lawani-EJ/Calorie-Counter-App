@@ -100,5 +100,6 @@ function getCaloriesFromInputs(list){
             //In this case, if the user enters an invalid input,
             //you want to alert them and then return null to indicate that the function has failed.
         }
+        calories += Number(currVal);
     }
 }
