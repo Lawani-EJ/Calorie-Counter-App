@@ -101,5 +101,10 @@ function getCaloriesFromInputs(list){
             //you want to alert them and then return null to indicate that the function has failed.
         }
         calories += Number(currVal);
+        //Remember that return ends the execution of a function. 
+        // After your if block, you need to handle the logic for when the input is valid.
+        //Because your if statement returns a value, you do not need an else statement.
+        //The Number constructor is a function that converts a value to a number
+        // If the value cannot be converted, it returns NaN which stands for "Not a Number"
     }
 }
