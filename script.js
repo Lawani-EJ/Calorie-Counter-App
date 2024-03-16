@@ -81,7 +81,12 @@ function getCaloriesFromInputs(list){
         const invalidInputMatch = isInvalidInput(currVal);
 
         if(invalidInputMatch){
-
+            //Remember that your isInvalidInput function returns String.match
+            //which is an array of matches or null if no matches are found.
+            //In JavaScript, values can either be truthy or falsy
+            // A value is truthy if it evaluates to true when converted to a Boolean. 
+            //A value is falsy if it evaluates to false when converted to a Boolean.
+            //null is an example of a falsy value.
         }
     }
 }
