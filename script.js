@@ -93,6 +93,9 @@ function getCaloriesFromInputs(list){
             //Browsers have a built in alert() function, 
             //which you can use to display a pop-up message to the user
             //The message to display is passed as the argument to the alert() function.
+
+            isError = true;
+            return null;
         }
     }
 }
