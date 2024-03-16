@@ -106,5 +106,7 @@ function getCaloriesFromInputs(list){
         //Because your if statement returns a value, you do not need an else statement.
         //The Number constructor is a function that converts a value to a number
         // If the value cannot be converted, it returns NaN which stands for "Not a Number"
+
     }
+    return calories;
 }
