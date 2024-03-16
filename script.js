@@ -96,6 +96,9 @@ function getCaloriesFromInputs(list){
 
             isError = true;
             return null;
+            //In programming, null is meant to represent the absence of a value.
+            //In this case, if the user enters an invalid input,
+            //you want to alert them and then return null to indicate that the function has failed.
         }
     }
 }
