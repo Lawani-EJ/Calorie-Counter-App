@@ -87,6 +87,8 @@ function getCaloriesFromInputs(list){
             // A value is truthy if it evaluates to true when converted to a Boolean. 
             //A value is falsy if it evaluates to false when converted to a Boolean.
             //null is an example of a falsy value.
+
+            alert(`Invalid Input: ${invalidInputMatch[0]}`);
         }
     }
 }
