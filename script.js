@@ -89,6 +89,10 @@ function getCaloriesFromInputs(list){
             //null is an example of a falsy value.
 
             alert(`Invalid Input: ${invalidInputMatch[0]}`);
+
+            //Browsers have a built in alert() function, 
+            //which you can use to display a pop-up message to the user
+            //The message to display is passed as the argument to the alert() function.
         }
     }
 }
