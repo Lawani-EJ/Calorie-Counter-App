@@ -77,6 +77,9 @@ isError = false;
 //You need to prevent this default action using the preventDefault() method of your e parameter.
 
 const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type=number]");
+
+//Your function needs to get the values from the entries the user has added.
+//This will return any number inputs that are in the #breakfast element.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
