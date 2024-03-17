@@ -70,6 +70,11 @@ function calculateCalories(e) {
 
 e.preventDefault()
 isError = false;
+
+//You will be attaching this function to the submit event of the form.
+//The submit event is triggered when the form is submitted.
+//The default action of the submit event is to reload the page. 
+//You need to prevent this default action using the preventDefault() method of your e parameter.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
