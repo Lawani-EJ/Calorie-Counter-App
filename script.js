@@ -76,14 +76,17 @@ isError = false;
 //The default action of the submit event is to reload the page. 
 //You need to prevent this default action using the preventDefault() method of your e parameter.
 
-const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type=number]");
+const breakfastNumberInputs = document.querySelectorAll('#breakfast input[type=number]');
 
 //Your function needs to get the values from the entries the user has added.
 //This will return any number inputs that are in the #breakfast element.
 
-const lunchNumberInputs = document.querySelectorAll("#lunch input[type=number]");
+const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]');
 
 //Using that same syntax.
+  const dinnerNumberInputs = document.querySelectorAll('#dinner input[type=number]');
+  const snacksNumberInputs = document.querySelectorAll('#snacks input[type=number]');
+  const exerciseNumberInputs = document.querySelectorAll('#exercise input[type=number]');
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
