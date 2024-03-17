@@ -68,13 +68,15 @@ function calculateCalories(e) {
 //so the first argument passed will be the browser event – e,
 //is a common name for this parameter.
 
-e.preventDefault()
+e.preventDefault();
 isError = false;
 
 //You will be attaching this function to the submit event of the form.
 //The submit event is triggered when the form is submitted.
 //The default action of the submit event is to reload the page. 
 //You need to prevent this default action using the preventDefault() method of your e parameter.
+
+const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type=number]");
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
