@@ -83,6 +83,7 @@ const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type=n
 
 const lunchNumberInputs = document.querySelectorAll("#lunch input[type=number]");
 
+//Using that same syntax.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
