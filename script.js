@@ -87,6 +87,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
   const dinnerNumberInputs = document.querySelectorAll('#dinner input[type=number]');
   const snacksNumberInputs = document.querySelectorAll('#snacks input[type=number]');
   const exerciseNumberInputs = document.querySelectorAll('#exercise input[type=number]');
+
+  let breakfastCalories = getCaloriesFromInputs (breakfastNumberInputs);
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
