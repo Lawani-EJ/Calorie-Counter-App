@@ -89,6 +89,7 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
   const exerciseNumberInputs = document.querySelectorAll('#exercise input[type=number]');
 
   let breakfastCalories = getCaloriesFromInputs (breakfastNumberInputs);
+  const lunchCalories = getCaloriesFromInputs (lunchNumberInputs);
   //Now that you have your lists of elements, 
   //you can pass them to your getCaloriesFromInputs function to extract the calorie total.
 }
