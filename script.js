@@ -101,7 +101,10 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //Also need to get the value of your #budget input.
     //Already queried this at the top of my code, and set it to the budgetNumberInput variable.
     //However, i used getElementById, which returns an Element, not a NodeList
-    //
+    
+    if (isError){
+        return;
+    }
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
