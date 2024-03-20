@@ -93,10 +93,15 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
   const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
   const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
   const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
-  //Now that you have your lists of elements, 
+  //Now that you have your lists of elements,
   //you can pass them to your getCaloriesFromInputs function to extract the calorie total.
 
-  const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+    //A NodeList is an array-like, which means you can iterate through it and it shares some common methods with an array. 
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);   //For my getCaloriesFromInputs function, an array will work for the argument just as well as a NodeList does.
+    //Also need to get the value of your #budget input.
+    //Already queried this at the top of my code, and set it to the budgetNumberInput variable.
+    //However, i used getElementById, which returns an Element, not a NodeList
+    //
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
