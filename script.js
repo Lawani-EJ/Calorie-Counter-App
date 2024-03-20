@@ -95,6 +95,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
   const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
   //Now that you have your lists of elements, 
   //you can pass them to your getCaloriesFromInputs function to extract the calorie total.
+
+  const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
