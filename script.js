@@ -128,6 +128,7 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //Otherwise, it should be "Deficit".
 
     output.innerHTML = ``;
+    //Needed to construct the HTML string that will be displayed in the output element
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
