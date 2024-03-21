@@ -127,7 +127,7 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //If it is less than 0, then surplusOrDeficit should be "Surplus".
     //Otherwise, it should be "Deficit".
 
-    output.innerHTML = ``;
+    output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
     //Needed to construct the HTML string that will be displayed in the output element
 }
 
