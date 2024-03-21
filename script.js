@@ -114,6 +114,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
 
     // const remainingCalories = budgetCalories - consumedCalories + exerciseCalories; 
     //This was a mistake
+
+    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
