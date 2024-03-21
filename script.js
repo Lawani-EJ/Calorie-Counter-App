@@ -116,7 +116,16 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //This was a mistake
 
     const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+    //I need to know if the user is in a caloric surplus or deficit.
+    //A caloric surplus is when you consume more calories than you burn,
+    //and a caloric deficit is when you burn more calories than you consume.
+
+    //Burning as many calories as you consume is called maintenance,
+    // and can be thought of as a surplus or deficit of 0,
+    //depending on the goals.
     const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
+    //If it is less than 0, then surplusOrDeficit should be "Surplus".
+    //Otherwise, it should be "Deficit".
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
