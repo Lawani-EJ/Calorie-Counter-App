@@ -110,6 +110,7 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //And if it is truthy then use return to end the function execution.
 
     let consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories + exerciseCalories ;
+    //(note that order matters for the tests). So i did this after my if statement.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
