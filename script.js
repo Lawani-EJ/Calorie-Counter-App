@@ -126,6 +126,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
     //If it is less than 0, then surplusOrDeficit should be "Surplus".
     //Otherwise, it should be "Deficit".
+
+    output.innerHTML = ``;
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
