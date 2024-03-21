@@ -109,7 +109,7 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //Adding an if statement to the calculateCalories function that checks the truthiness of the global error flag.
     //And if it is truthy then use return to end the function execution.
 
-    let consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories + exerciseCalories ;
+    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories + exerciseCalories ;
     //(note that order matters for the tests). So i did this after my if statement.
 
     // const remainingCalories = budgetCalories - consumedCalories + exerciseCalories; 
