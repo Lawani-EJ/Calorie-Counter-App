@@ -108,6 +108,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //The getCaloriesFromInputs function will set the global error flag to true if an invalid input is detected.
     //Adding an if statement to the calculateCalories function that checks the truthiness of the global error flag.
     //And if it is truthy then use return to end the function execution.
+
+    let consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories + exerciseCalories ;
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
