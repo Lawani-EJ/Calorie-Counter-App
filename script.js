@@ -21,7 +21,8 @@ function cleanInputString (str){
     // const regex = /hello/;  //While looping through the string works, creating a new array is inefficient for memory and runtime performance.
     //Regular Expressions (referred to as "regex") to match specific characters.
 
-    const regex = /[+-\s]/g;  // The character class \s will match any whitespace character. //Turned my +-\s pattern into a character class.
+    const regex = /[+-\s]/g;  
+    // The character class \s will match any whitespace character. //Turned my +-\s pattern into a character class.
     return str.replace (regex, ""); 
     //.replace takes two arguments. The first is the character sequence to replace – this can either be a string or a regex pattern. The second is the string to replace that sequence with. 
 }
@@ -30,14 +31,13 @@ function cleanInputString (str){
 function isInvalidInput(str){
     const regex = /\d+e\d+/i;  //This flag makes your pattern case-insensitive.
     // Added Character class from 0-9
-    return regex = str.match(regex);  //.match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
+    return str.match(regex);  //.match() will return an array of match results – containing either the first match, or all matches if the global flag is used.
 
 }
 
 function addEntry(){
-    const targetId = "#" + entryDropdown.value;
-    const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`)
-    // what happened here i dont know 
+    const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
+    // what happened here i don't know 
 
     const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1; //The querySelectorAll() method returns a NodeList of all the elements that match the selector.
     // A NodeList is an array-like object, so you can access the elements using bracket notation.
@@ -120,7 +120,6 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
 //(Ex. 'click') The second is the callback function, or the function that runs when the event is triggered.
-addEntryButton.addEventListener("click",addEntry);
 
 function getCaloriesFromInputs(list){
     let calories = 0;
@@ -128,40 +127,43 @@ function getCaloriesFromInputs(list){
     //A NodeList is a list of elements like an array.
     //It contains the elements that match the query selector.
     //You will need to loop through these elements in the list.
-    for(const item of list){ //A for...of loop is used to iterate over elements in an iterable object like an array.
+    for(const item of list) { //A for...of loop is used to iterate over elements in an iterable object like an array.
         //The NodeList values you will pass to list will consist of input elements.
         //So you will want to look at the value attribute of each element. 
         const currVal = cleanInputString(item.value);
         //Remember that you wrote a function earlier to clean the user's input? You'll need to use that function here.
         const invalidInputMatch = isInvalidInput(currVal);
-
-        if(invalidInputMatch){
+        
+        if(invalidInputMatch)  {
             //Remember that your isInvalidInput function returns String.match
             //which is an array of matches or null if no matches are found.
             //In JavaScript, values can either be truthy or falsy
             // A value is truthy if it evaluates to true when converted to a Boolean. 
             //A value is falsy if it evaluates to false when converted to a Boolean.
             //null is an example of a falsy value.
-
+            
             alert(`Invalid Input: ${invalidInputMatch[0]}`);
+                  isError = true;
 
             //Browsers have a built in alert() function, 
             //which you can use to display a pop-up message to the user
             //The message to display is passed as the argument to the alert() function.
-
-            isError = true;
+            
             return null;
             //In programming, null is meant to represent the absence of a value.
             //In this case, if the user enters an invalid input,
             //you want to alert them and then return null to indicate that the function has failed.
         }
+        
         calories += Number(currVal);
         //Remember that return ends the execution of a function. 
         // After your if block, you need to handle the logic for when the input is valid.
         //Because your if statement returns a value, you do not need an else statement.
         //The Number constructor is a function that converts a value to a number
         // If the value cannot be converted, it returns NaN which stands for "Not a Number"
-
+        
     }
     return calories;
 }
+
+addEntryButton.addEventListener("click",addEntry);
