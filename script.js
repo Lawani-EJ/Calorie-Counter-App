@@ -131,6 +131,9 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
 
     //Needed to construct the HTML string that will be displayed in the output element
     // This method returns the calling string value converted to lower case.
+    //When the user has a calorie deficit
+    //the remainingCalories value will be negative.
+    //Math.abs() is a built-in JavaScript method that will return the absolute value of a number.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
