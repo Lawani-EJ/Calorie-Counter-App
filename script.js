@@ -127,7 +127,7 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //If it is less than 0, then surplusOrDeficit should be "Surplus".
     //Otherwise, it should be "Deficit".
 
-    output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calorie ${surplusOrDeficit}</span>`; //When you need to lower case a string, you can use the toLowerCase() method.
+    output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>`; //When you need to lower case a string, you can use the toLowerCase() method.
 
     //Needed to construct the HTML string that will be displayed in the output element
     // This method returns the calling string value converted to lower case.
