@@ -128,6 +128,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //Otherwise, it should be "Deficit".
     output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
     <hr></hr> 
+
+    <p>${budgetCalories} Calories Budgeted</p>
     `; //When you need to lower case a string, you can use the toLowerCase() method.
     //To keep the code clean and readable,
     //Added this on a new line in the template literal
