@@ -130,6 +130,8 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     <hr></hr> 
 
     <p>${budgetCalories} Calories Budgeted</p>
+    <p>${consumedCalories} Calories Consumed</p>
+    <p>${exerciseCalories} Calories Burned</p>
     `; //When you need to lower case a string, you can use the toLowerCase() method.
     //To keep the code clean and readable,
     //Added this on a new line in the template literal
