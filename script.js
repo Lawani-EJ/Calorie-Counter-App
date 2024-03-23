@@ -223,3 +223,5 @@ calorieCounter.addEventListener("submit", calculateCalories);
 //Still need to mount the event listener.
 
 clearButton.addEventListener("click", clearForm);
+
+//When the button is clicked, it should call the clearForm function.
