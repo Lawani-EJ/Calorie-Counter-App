@@ -196,7 +196,10 @@ function getCaloriesFromInputs(list){
 }
 
 function clearForm() {
-    const inputContainers = Array.from(document.querySelectorAll('.input-container')); 
+    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+    //Recalling that document.querySelectorAll returns a NodeList,
+    //which is array-like but is not an array.
+    //However, the Array object has a .from() method that accepts an array-like and returns an array.
 }
 
 addEntryButton.addEventListener("click",addEntry);
