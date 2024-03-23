@@ -204,6 +204,7 @@ function clearForm() {
     for (const container of inputContainers) {
         container.innerHTML = '';
     }
+    //This will clear all of the contents of that input container.
 }
 
 addEntryButton.addEventListener("click",addEntry);
