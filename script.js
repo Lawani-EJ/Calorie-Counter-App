@@ -212,6 +212,8 @@ function clearForm() {
     //is that innerText will not render HTML elements,
     //but will display the tags and content as raw text.
     output.classList.add('hide');
+    //The classList property has an .add() method which is the opposite of the .remove() method.
+    //It accepts a string representing the class to add to the element.
 }
 
 addEntryButton.addEventListener("click",addEntry);
