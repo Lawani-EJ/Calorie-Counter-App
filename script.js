@@ -197,3 +197,6 @@ function getCaloriesFromInputs(list){
 
 addEntryButton.addEventListener("click",addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
+//If you click on the Calculate Remaining Calories button,
+//you'll see that nothing happens.
+//Still need to mount the event listener.
