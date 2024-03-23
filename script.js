@@ -205,6 +205,8 @@ function clearForm() {
         container.innerHTML = '';
     }
     //This will clear all of the contents of that input container.
+
+    budgetNumberInput.value = '';
 }
 
 addEntryButton.addEventListener("click",addEntry);
