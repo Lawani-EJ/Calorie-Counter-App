@@ -142,6 +142,9 @@ const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]')
     //the remainingCalories value will be negative.
     //Math.abs() is a built-in JavaScript method that will return the absolute value of a number.
     output.classList.remove('hide');
+    //The output variable is an Element, which has a classList property,
+    //This property has a .remove() method,
+    //which accepts a string representing the class to remove from the element.
 }
 
 //The addEventListener method takes two arguments. The first is the event to listen to. 
