@@ -207,7 +207,7 @@ function clearForm() {
     //This will clear all of the contents of that input container.
 
     budgetNumberInput.value = '';
-    output.innerText = '';
+    output.innerText = '.hide';
     //The difference between innerText and innerHTML
     //is that innerText will not render HTML elements,
     //but will display the tags and content as raw text.
