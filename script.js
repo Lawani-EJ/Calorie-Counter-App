@@ -200,6 +200,10 @@ function clearForm() {
     //Recalling that document.querySelectorAll returns a NodeList,
     //which is array-like but is not an array.
     //However, the Array object has a .from() method that accepts an array-like and returns an array.
+
+    for (const container of inputContainers) {
+        container.innerHTML = '';
+    }
 }
 
 addEntryButton.addEventListener("click",addEntry);
